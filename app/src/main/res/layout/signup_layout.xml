@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/layout_design"
+            android:gravity="center">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+                    <!--  Company Name Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="8dp">
+
+                        <EditText
+                            android:id="@+id/input_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Company Name"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/person"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!-- Last Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="User Name"
+                            android:drawableLeft="@drawable/user1"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!-- Email Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:drawableLeft="@drawable/email1"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="textEmailAddress" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--  Mobile Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile No."
+                            android:drawableLeft="@drawable/mobile1"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:maxLength="10"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--  Telephone Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_telephone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Telephone No."
+                            android:drawableLeft="@drawable/telephone"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:maxLength="12"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:drawableLeft="@drawable/lock"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--  comfirm password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_c_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Confirm Password"
+                            android:drawableLeft="@drawable/lock"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="number"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <!--  post code password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/input_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Postal Code"
+                            android:drawableLeft="@drawable/email1"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/pagecolor"
+                            android:inputType="number"
+                            android:maxLength="6"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                       >
+                        <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/rounded_board_text"
+                        android:layout_margin="2dp">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/spinner1"></Spinner>
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@drawable/rounded_board_text"
+                            android:layout_margin="2dp">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/spinner2"></Spinner>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:minHeight="35dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:text="Seller Type :"
+                            android:gravity="center|start"
+                            android:paddingLeft="10dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".3"
+                            android:layout_height="wrap_content"
+                            android:text="Wholesale"
+                            android:layout_marginRight="2dp"/>
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="0dp"
+                            android:layout_weight=".3"
+                            android:layout_height="match_parent"
+                            android:text="Retail"
+                            android:layout_marginLeft="2dp"/>
+
+
+                    </LinearLayout>
+                    <!-- Signup Button -->
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="12dp"
+                        android:background="@color/pagecolor"
+                        android:textColor="@color/white"
+                        android:text="Create Account" />
+
+                    <TextView
+                        android:id="@+id/link_signin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:gravity="center"
+                        android:textColor="@color/pagecolor"
+                        android:text="Already a member? SignIn"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/circleView"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|center"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
